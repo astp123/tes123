@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <title>Mapa mental: Factores de la leche</title>
+  <script type="module">
+    import mermaid from "https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs";
+
+    mermaid.initialize({
+      startOnLoad: true,
+      theme: "forest",
+      mindmap: {
+        maxNodeWidth: 150
+      }
+    });
+  </script>
+  <style>
+    body {
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f3f5f9;
+      margin: 0;
+      padding: 2rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 1.5rem;
+    }
+
+    h1 {
+      color: #2f4858;
+      margin: 0;
+      text-align: center;
+    }
+
+    .container {
+      width: min(100%, 1200px);
+      background: #ffffff;
+      border-radius: 12px;
+      box-shadow: 0 10px 40px rgba(15, 32, 62, 0.12);
+      padding: 1.5rem;
+    }
+
+    .mermaid {
+      margin: 0 auto;
+      font-size: 16px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Mapa mental de los nutrientes y factores de la leche</h1>
+  <div class="container">
+    <div class="mermaid">
+      %%{init: {'theme':'forest', 'mindmap': {'padding': 12}}}%%
+      mindmap
+        root((Leche))
+          "Nutrientes Esenciales"
+            Energía
+            Proteínas
+            Grasas
+            "Componente Principal"
+            Vitaminas
+            Agua
+            Minerales
+          "Tipos de Leche por Especie"
+            Vaca
+            Búfala
+            Camella
+            Oveja
+            Cabra
+            Yak
+            Equinos
+          "Factores Afectantes"
+            "Especie y Raza"
+            Edad
+            Dieta
+            "Estado de Lactancia"
+            "Número de Partos"
+            "Sistema Agrícola"
+            Entorno
+            "Estación del Año"
+  </div>
+</body>
+</html>
